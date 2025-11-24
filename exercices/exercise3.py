@@ -1,20 +1,18 @@
-# Madlibs game
-# this is a word game where you create a story
-# by filling in blanks with random words
-
+# Madlibs game = cria uma história preenchendo espaços com palavras fornecidas pelo usuário
 
 print(" \n===== Hello, this is a word game where you create a story by filling in blanks with random words =====\n")
 
+# Coleta de palavras que serão inseridas na história
 adjective1 = input("\nEnter an adjective (description): ")
 noun1 = input("Enter a noun (person, place, thing): ")
 adjective2 = input("Enter an adjective (description): ")
 verb1 = input("Enter a verb ending with 'ing' ")
 adjective3 = input("Enter an adjective (description): ")
 
-
+# Monta e exibe a história final
 print(f"Today I went to a {adjective1} zoo.")
 print(f"In an exhibit, I saw a {noun1}")
 print(f"{noun1} was {adjective2} and {verb1}")
-print(f"Ï was {adjective3}!")
+print(f"I was {adjective3}!")
 
 print(" \n============== Thanks for playing the game! ==============\n")

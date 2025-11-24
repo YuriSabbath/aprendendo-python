@@ -1,9 +1,11 @@
-# Python Calculadora de Juros Compostos
+# compound interest calculator = calcula o valor final aplicando juros compostos
+# validações impedem valores negativos para princípio, taxa e tempo
 
 principle = 0
 rate = 0
 time = 0
 
+# valida o valor inicial
 while True:
     principle = float(input("Enter the principle amount: "))
     if principle < 0:
@@ -11,6 +13,7 @@ while True:
     else:
         break
 
+# valida a taxa de juros
 while True:
     rate = float(input("Enter the interest rate: "))
     if rate < 0:
@@ -18,6 +21,7 @@ while True:
     else:
         break
 
+# valida o tempo em anos
 while True:
     time = int(input("Enter the time in years: "))
     if time < 0:
@@ -25,5 +29,6 @@ while True:
     else:
         break
 
+# fórmula de juros compostos: A = P * (1 + r)^t
 total = principle * pow((1 + rate/100), time)
 print(f"Balance after {time} year/s: ${total:.2f}")

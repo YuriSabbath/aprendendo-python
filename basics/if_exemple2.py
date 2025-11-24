@@ -1,3 +1,6 @@
+# input + validação simples de string vazia
+# if/else = executa caminhos diferentes conforme a condição
+
 name = input("Enter your name: ")
 
 if name == "":
@@ -5,6 +8,7 @@ if name == "":
 else:
     print(f"Hello {name}")
 
+# checagem de estado booleano (online/offline)
 online = True
 
 if online:
